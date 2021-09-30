@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-je-tq701f$0yx7drddmu1@v&5x4i+26s+tu5y2ou8dt(tfk@v=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','nestedchat.herokuapp.com']
 
 
 # Application definition
@@ -59,7 +59,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR.parent,'frontend/build')
+            os.path.join(BASE_DIR,'build')
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -137,14 +137,14 @@ PASS_SENDER = "qwerty@123"
 BASE_URL = 'http://127.0.0.1:8000/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR.parent,'frontend/build/static')
+    os.path.join(BASE_DIR,'build/static')
 ]
 
 CSRF_COOKIE_NAME = "X-CSRFToken"
 
 ASGI_APPLICATION = 'manager.asgi.application'
 
-OTHER_STATICS = os.path.join(BASE_DIR.parent,'frontend/public')
+OTHER_STATICS = os.path.join(BASE_DIR,'public')
 
 CHANNEL_LAYERS = {
     'default': {
@@ -154,3 +154,5 @@ CHANNEL_LAYERS = {
         },
     },
 }
+
+COOKIE_KEY = b'NpQHin1xqjZmUTbav9GbvN3yRpJqEDOftMF6ZI-guKw='

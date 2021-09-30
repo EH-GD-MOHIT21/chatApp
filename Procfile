@@ -1,0 +1,1 @@
+daphne manager.asgi:application

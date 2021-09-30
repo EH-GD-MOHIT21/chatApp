@@ -1,0 +1,298 @@
+.logincontainer {
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.logincontainer .lowerheaderlogin {
+    text-align: center;
+}
+
+.logincontainer input {
+    width: 95%;
+    margin: 20px auto;
+    height: 40px;
+    font-size: 20px;
+    outline: none;
+}
+
+.lowerheaderlogin a {
+    display: block;
+}
+
+.lowerheaderlogin button {
+    margin: 20px auto;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.upperheaderlogin,
+.signupupper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.upperheaderlogin a,
+.signupupper a {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* signup page css */
+
+.signupcontainer {
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.signuplower {
+    text-align: center;
+}
+
+.signuplower input,
+.ForgotPassContainer .lowerfpass input,
+.passchangerContainer input,
+.lowerheadschatroomcreatepage input {
+    width: 95%;
+    margin: 20px auto;
+    height: 40px;
+    font-size: 20px;
+    outline: none;
+}
+
+.signuplower button,
+.ForgotPassContainer .lowerfpass button,
+.passchangerContainer button,
+.lowerheadschatroomcreatepage button {
+    margin: 20px auto;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
+/* forgot password page */
+
+.ForgotPassContainer,
+.passchangerContainer,
+.parentchatroomcontainer {
+    width: 300px;
+    margin: 20px auto;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.ForgotPassContainer .upperfpass {
+    text-align: center;
+}
+
+.ForgotPassContainer .lowerfpass a {
+    display: block;
+}
+
+#otpfpsec {
+    display: none;
+}
+
+#verifier {
+    display: none;
+}
+
+#otpregister {
+    display: none;
+}
+
+.passchangerContainer .headerpasschanger {
+    text-align: center;
+}
+
+
+/* spinner */
+
+#spinnerhandler {
+    display: none;
+}
+
+
+/* home component */
+
+.homecontainer {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient( 180deg, #dddbd1, #d2dbdc);
+}
+
+.cardhome {
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: 0 17px 50px 0 rgb(0 0 0 / 19%), 0 12px 15px 0 rgb(0 0 0 / 24%);
+}
+
+.cardhome .upper {
+    text-align: center;
+}
+
+.cardhome .lower {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.cardhome .lower a {
+    text-decoration: none;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+
+.homecontainer .headerhome {
+    background-color: #00bfa5;
+    width: 100vw;
+    height: 20vh;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+
+/* chat room code page */
+
+.upperheadschatroomcreatepage {
+    text-align: center;
+}
+
+.lowerheadschatroomcreatepage {
+    display: block;
+    margin: 20px auto;
+}
+
+
+/* chatPage css */
+
+#chat-log {
+    height: calc(80vh - 20px);
+    width: 90vw;
+    display: block;
+    margin: 10px auto;
+    border: 2px solid black;
+    overflow-y: auto;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.specialgrpmessage {
+    text-align: center;
+    width: 60%;
+    background-image: linear-gradient( 180deg, #dddbd1, #d2dbdc);
+    display: block;
+    margin: 5px auto !important;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.flexcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chat-message-input {
+    resize: none;
+    padding: 5px 12px;
+    margin-bottom: 20px;
+}
+
+#chat-message-submit {
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 5px 7px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.username {
+    margin: 5px;
+}
+
+.message {
+    margin: 5px;
+}
+
+.alignright {
+    text-align: right;
+    margin: 5px;
+}
+
+.alignleft {
+    text-align: left;
+    margin: 5px;
+}
+
+.newmessage {
+    background: royalblue;
+    width: 40%;
+    border-radius: 10px;
+    margin-left: 5px;
+    padding: 6px;
+    margin-top: 5px;
+}
+
+.rightablecontent {
+    text-align: right;
+    display: grid;
+    justify-items: end;
+}
+
+.sendnewmessage {
+    background: hotpink;
+    width: 40%;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+    text-align: right;
+    display: grid;
+    justify-items: end;
+}
+
+.upperpart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.managericonum {
+    display: flex;
+}
+
+.personico {
+    position: absolute;
+    top: 19px;
+    right: 100px;
+}
+
+#activepersons {
+    position: absolute;
+    top: -29px;
+    right: 85px;
+    font-size: 20px;
+}
